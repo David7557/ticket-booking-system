@@ -1,0 +1,167 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container, .ticket-container{
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+    text-transform: uppercase;
+}
+
+.input-container, .ticket-detail {
+    margin-bottom: 15px;
+}
+
+/* Uniform input, select, and button styles */
+.input-container input,
+.input-container select,
+button {
+    width: 100%; /* Set the width to 100% to make them equal */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px; /* Consistent spacing between elements */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-container input:focus,
+.input-container select:focus {
+    border-color: #9b59b6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
+}
+
+/* Label styling */
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button styling */
+button {
+    background-color: #9b59b6;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #8e44ad;
+    /* transform: scale(1.05); */
+}
+
+/* Centering the text */
+p {
+    text-align: center;
+}
+
+/* Link styling */
+a {
+    color: #9b59b6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #8e44ad;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Additional styling for submit button */
+input[type="submit"] {
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #8e44ad;
+    transform: scale(1.05);
+}
+/* Ticket card styles */
+.ticket-container {
+    border: 2px dashed #9b59b6;
+    padding: 20px;
+    text-align: left;
+}
+
+.ticket-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.ticket-detail span {
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

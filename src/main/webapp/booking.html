@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Book Your Ticket</h1>
+
+        <form action="booking" method="post">
+            <div class="input-container">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="input-container">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="input-container">
+                <!-- <label for="from">From</label> -->
+                <select name="from" id="from">
+                    <option value="From">From</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Chittagong">Chittagong</option>
+                    <option value="Sylhet">Sylhet</option>
+                    <option value="Khulna">Khulna</option>
+                    <option value="Rajshahi">Rajshahi</option>
+                    <option value="Barishal">Barishal</option>
+                    <option value="Rangpur">Rangpur</option>
+                    <option value="Mymensingh">Mymensingh</option>
+                </select>
+                <!-- <label for="to">To</label> -->
+                <select name="to" id="to">
+                    <option value="To">To</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Chittagong">Chittagong</option>
+                    <option value="Sylhet">Sylhet</option>
+                    <option value="Khulna">Khulna</option>
+                    <option value="Rajshahi">Rajshahi</option>
+                    <option value="Barishal">Barishal</option>
+                    <option value="Rangpur">Rangpur</option>
+                    <option value="Mymensingh">Mymensingh</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <!-- <label for="vehicle">Vehicle</label> -->
+                <select name="vehicle" id="vehicle">
+                    <option value="Vehicle">Vehicle</option>
+                    <option value="Bus">Bus</option>
+                    <option value="Train">Train</option>
+                    <option value="Plane">Plane</option>
+                    <option value="Ship">Ship</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <!-- <label for="passengers">Number of Passengers</label> -->
+                <select name="passengers" id="passengers">
+                    <option value="Passengers">Passengers</option>
+                    <option value="1">1 Passenger</option>
+                    <option value="2">2 Passengers</option>
+                    <option value="3">3 Passengers</option>
+                    <option value="4">4 Passengers</option>
+                    <option value="5">5 Passengers</option>
+                    <option value="6">6 Passengers</option>
+                    <option value="7">7 Passengers</option>
+                    <option value="8">8 Passengers</option>
+                    <option value="9">9 Passengers</option>
+                    <option value="10">10 Passengers</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <button type="submit">Book Now</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

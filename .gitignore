@@ -1,0 +1,14 @@
+.classpath
+.project
+.settings
+bin/
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.tmp
+*.swp
+*.swo
+.metadata/
